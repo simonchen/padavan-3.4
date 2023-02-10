@@ -162,7 +162,7 @@ dir_$(CONFIG_FIRMWARE_INCLUDE_MTR)		+= mtr
 dir_$(CONFIG_FIRMWARE_INCLUDE_SOCAT)	+= socat
 dir_$(CONFIG_FIRMWARE_INCLUDE_SRELAY)	+= srelay
 dir_$(CONFIG_FIRMWARE_INCLUDE_TUNSAFE) += tunsafe
-ifeq ($(CONFIG_FIRMWARE_INCLUDE_SMBD36),y)
+###ifeq ($(CONFIG_FIRMWARE_INCLUDE_SMBD36),y)
 ###dir_$(SAMBA_ENABLED)				+= samba36
 ###dir_y							+= wsdd2
 ###else
