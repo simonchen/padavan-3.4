@@ -120,12 +120,12 @@ dir_y						+= rc
 dir_$(CONFIG_FIRMWARE_INCLUDE_ANTFS)		+= antfs
 dir_$(CONFIG_FIRMWARE_INCLUDE_NAPT66)		+= napt66
 dir_$(CONFIG_FIRMWARE_INCLUDE_SFE)		+= shortcut-fe
-###dir_y						+= infosvr
-###dir_y						+= inadyn
+dir_y						+= infosvr
+dir_y						+= inadyn
 dir_y						+= miniupnpd
 dir_y						+= dnsmasq
-###dir_y						+= igmpproxy
-###dir_y						+= udpxy
+dir_y						+= igmpproxy
+dir_y						+= udpxy
 dir_y						+= utils
 dir_y						+= lanauth
 dir_y						+= 802.1x
@@ -162,12 +162,12 @@ dir_$(CONFIG_FIRMWARE_INCLUDE_MTR)		+= mtr
 dir_$(CONFIG_FIRMWARE_INCLUDE_SOCAT)	+= socat
 dir_$(CONFIG_FIRMWARE_INCLUDE_SRELAY)	+= srelay
 dir_$(CONFIG_FIRMWARE_INCLUDE_TUNSAFE) += tunsafe
-###ifeq ($(CONFIG_FIRMWARE_INCLUDE_SMBD36),y)
-###dir_$(SAMBA_ENABLED)				+= samba36
-###dir_y							+= wsdd2
-###else
-###dir_$(SAMBA_ENABLED)				+= samba3
-###endif
+ifeq ($(CONFIG_FIRMWARE_INCLUDE_SMBD36),y)
+dir_$(SAMBA_ENABLED)				+= samba36
+dir_y							+= wsdd2
+else
+dir_$(SAMBA_ENABLED)				+= samba3
+endif
 dir_$(CONFIG_FIRMWARE_INCLUDE_SHADOWSOCKS)	+= chnroute
 dir_$(CONFIG_FIRMWARE_INCLUDE_TTYD)		+= ttyd
 dir_$(FRP_ENABLE)				+= frp
