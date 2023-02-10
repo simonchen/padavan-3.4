@@ -31,7 +31,7 @@ oldconfig: $(obj)/conf
 
 silentoldconfig: $(obj)/conf
 	$(Q)mkdir -p include/generated
-	yes "" | $< --$@ $(Kconfig)
+	$< --$@ $(Kconfig)
 
 localyesconfig localmodconfig: $(obj)/streamline_config.pl $(obj)/conf
 	$(Q)mkdir -p include/generated
